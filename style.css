@@ -156,4 +156,27 @@ main {
 	height: 36px;
 	width: 36px;
   }
+  main {
+	margin-top: 20px;
+}
+.product-card {
+	width: 208px;
+	padding-bottom: 10px;
+}
+.product-card img {
+	height: 180px;
+}
+
+.product-card h3 {
+	font-size: 18px;
+	padding: 0 10px;
+}
+
+.product-card p {
+	padding: 0 10px;
+}
+
+.product-card button {
+	margin-right: 10px;
+}
 }

@@ -130,10 +130,30 @@ main {
     margin-right: 20px;
 }
 
-
-
-
-
-.disabled {
-    display: none;
+@media all and (max-width: 1540px) {
+	body{
+		background: #333333;
+	}
+	.container {
+		max-width: 1300px;
+  }
+  header{
+	margin: 0;
+	padding: 15px 0;
+	box-shadow: none;
+  }
+  .header__logo{
+	font-size: 34px;
+  }
+  .header__location{
+	font-size: 34px;
+  }
+  .header__navigation-nav{
+	width: 48px;
+	height: 48px;
+  }
+  .header__navigation-nav img{
+	height: 36px;
+	width: 36px;
+  }
 }

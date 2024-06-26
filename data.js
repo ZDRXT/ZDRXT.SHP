@@ -16,7 +16,6 @@ let products = [
         photos: [
             "./src/images/products/t-shirts/id1p1",
             "./src/images/products/t-shirts/id1p2",
-            "./src/images/products/t-shirts/id1p3",
         ]
     },
     {

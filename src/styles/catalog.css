@@ -2,14 +2,14 @@
     background-color: #333333;
     border-radius: 1vh;
     color: white;
-    height: calc(100vh - 240px);
+    height: calc(100vh - 140px);
     overflow: hidden;
     padding: 40px 80px;
     box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.3), 10px 10px rgba(0, 0, 0, 0.25), 15px 15px rgba(0, 0, 0, 0.2);
 }
 
 .catalog__list{
-    height: calc(100% - 100px);
+    height: 100%;
     overflow-y: auto;
 }
 
@@ -49,4 +49,24 @@
     font-size: 20px;
     padding: 10px;
     border-radius: 1vh;
+}
+
+@media all and (max-width: 1540px) {
+    .catalog{
+        padding: 0;
+        box-shadow: none;
+    }
+
+    .catalog__title{
+        margin-bottom: 15px;
+    }
+
+    .catalog .product-card{
+        width: 226px;
+    }
+    
+    .catalog__title-text{
+        font-size: 32px;
+        font-weight: 700;
+    }
 }

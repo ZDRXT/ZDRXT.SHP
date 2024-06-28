@@ -173,7 +173,6 @@ main .home {
     }
 
     .categories__content h2 {
-        text-align: left;
         font-size: 32px;
         margin-bottom: 30px;
         margin-top: 0;
@@ -196,6 +195,11 @@ main .home {
 	 .content__top-item{
 		height: 220px;
 	 }
+
+     .content .transformated-title1{
+        transform: rotate(-90deg) translate(-215px);
+     }
+
 	 .content .transformated-title2{
 		transform: rotate(-90deg) translate(-155px);
 	}

@@ -175,6 +175,9 @@
 }
 
 @media all and (max-width: 768px){
+	.cart{
+		height: calc(100vh - 50px);
+  }
   .cart__list-item h3{
 		font-size: 24px;
   }
@@ -233,7 +236,7 @@
 	width: 100%;
 	}
 	.cart{
-		height: calc(100vh - 100px);
+		height: calc(100vh - 80px);
 	}
 	.cart__list{
 		height: calc(100% - 120px) ;

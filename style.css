@@ -200,7 +200,7 @@ main {
     }
 
     .header__location{
-        font-size: 28px;
+		display: none;		  
     }
 
     .header__logo{

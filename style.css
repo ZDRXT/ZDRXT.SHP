@@ -131,52 +131,94 @@ main {
 }
 
 @media all and (max-width: 1540px) {
-	body{
-		background: #333333;
-	}
-	.container {
-		max-width: 1300px;
-  }
-  header{
-	margin: 0;
-	padding: 15px 0;
-	box-shadow: none;
-  }
-  .header__logo{
-	font-size: 34px;
-  }
-  .header__location{
-	font-size: 34px;
-  }
-  .header__navigation-nav{
-	width: 48px;
-	height: 48px;
-  }
-  .header__navigation-nav img{
-	height: 36px;
-	width: 36px;
-  }
-  main {
-	margin-top: 20px;
-}
-.product-card {
-	width: 208px;
-	padding-bottom: 10px;
-}
-.product-card img {
-	height: 180px;
+    body {
+        background: #333333;
+    }
+
+    .container {
+        max-width: 1300px;
+    }
+
+    header {
+        margin: 0;
+        padding: 15px 0;
+        box-shadow: none;
+    }
+
+    .header__logo {
+        font-size: 34px;
+    }
+
+    .header__location {
+        font-size: 34px;
+    }
+
+    .header__navigation-nav {
+        width: 48px;
+        height: 48px;
+    }
+
+    .header__navigation-nav img {
+        height: 36px;
+        width: 36px;
+    }
+
+    main {
+        margin-top: 20px;
+    }
+
+    .product-card {
+        width: 208px;
+        padding-bottom: 10px;
+    }
+
+    .product-card img {
+        height: 180px;
+    }
+
+    .product-card h3 {
+        font-size: 18px;
+        padding: 0 10px;
+    }
+
+    .product-card p {
+        padding: 0 10px;
+    }
+
+    .product-card button {
+        margin-right: 10px;
+    }
 }
 
-.product-card h3 {
-	font-size: 18px;
-	padding: 0 10px;
-}
+@media all and (max-width: 768px){
+    main{
+        margin-top: 5px;
+    }
 
-.product-card p {
-	padding: 0 10px;
-}
+    header{
+        padding: 10px 0;
+    }
 
-.product-card button {
-	margin-right: 10px;
-}
+    .header__location{
+        font-size: 28px;
+    }
+
+    .header__logo{
+        font-size: 28px;
+    }
+
+    .header__navigation{
+        gap: 10px;
+    }
+
+    .header__navigation a, .header__navigation button{
+        width: 36px;
+        height: 36px;
+        border: none;
+    }
+
+    .header__navigation img{
+        height: 26px;
+        width: 26px;
+    }
 }

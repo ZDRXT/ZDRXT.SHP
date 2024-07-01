@@ -8,11 +8,6 @@
     box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.3), 10px 10px rgba(0, 0, 0, 0.25), 15px 15px rgba(0, 0, 0, 0.2);
 }
 
-.catalog__list{
-    height: 100%;
-    overflow-y: auto;
-}
-
 .catalog__list::-webkit-scrollbar{
     background-color: #C9C9C9;
     width: 10px;
@@ -26,8 +21,10 @@
 }
 
 .catalog__list{
+    height: 100%;
+    overflow-y: auto;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
     padding-left: 20px;
 }
 
@@ -68,5 +65,58 @@
     .catalog__title-text{
         font-size: 32px;
         font-weight: 700;
+    }
+}
+
+@media all and (max-width: 768px){
+    .catalog{
+        height: 280px;
+    }
+
+    .catalog__title-text{
+        font-size: 24px;
+    }
+
+    .catalog__title{
+        margin-bottom: 15px;
+    }
+
+    select{
+        height: 32px;
+        padding: 0 !important;
+        font-size: 24px;
+    }
+
+    .catalog__list{
+        padding-left: 0;
+        gap: 10px;
+    }
+
+    .catalog .product-card{
+        width: 128px;
+        padding-bottom: 5px;
+    }
+
+    .product-card img{
+        height: 110px;
+    }
+
+    .product-card h3{
+        font-size: 14px;
+        padding: 0 7px;
+        margin: 0 0 5px 0;
+    }
+
+    .product-card p{
+        font-size: 14px;
+        padding: 1px 5px 0 5px;
+        margin: 0;
+    }
+
+    .product-card button{
+        height: 20px;
+        width: 48px;
+        font-size: 12px;
+        margin-right: 5px;
     }
 }

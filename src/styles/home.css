@@ -224,7 +224,14 @@ main .home {
 		 position: absolute;
 		 top: 0;
 		 left: -140%;
+		 transition: all 0.3s;
+		 padding: 30px;
+		 z-index: 99;
+		 height: 100vh;
 	}
+	.categories.active{
+		left: 0;
+  }
 }
 
 @media all and (max-width: 768px) {

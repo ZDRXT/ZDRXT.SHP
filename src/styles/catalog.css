@@ -49,6 +49,10 @@
 	border-radius: 1vh;
 }
 
+.categories{
+	display: none;
+}
+
 @media all and (max-width: 1760px) {
 	.catalog .product-card{
 		 width: 250px;
@@ -77,6 +81,11 @@
 	.catalog__title-text {
 		 font-size: 32px;
 		 font-weight: 700;
+	}
+}
+@media all and (max-width: 1024px) {
+	.categories{
+		display: flex;
 	}
 }
 

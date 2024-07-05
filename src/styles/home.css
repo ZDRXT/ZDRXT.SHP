@@ -1,49 +1,3 @@
-.categories {
-	background-color: #333333;
-	border-radius: 1vh;
-	color: white;
-	width: 425px;
-	height: calc(100vh - 240px);
-	padding: 20px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	flex-shrink: 0;
-	box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.3), 10px 10px rgba(0, 0, 0, 0.25), 15px 15px rgba(0, 0, 0, 0.2);
-}
-
-.categories__content h2 {
-	font-size: 42px;
-	text-align: center;
-	margin-top: 20px;
-	margin-bottom: 40px;
-}
-
-.categories__nav {
-	display: flex;
-	flex-direction: column;
-	gap: 20px;
-}
-
-.categories__nav a {
-	display: block;
-	background-color: #C9C9C9;
-	height: 60px;
-	width: 100%;
-	border-radius: 10px;
-	text-decoration: none;
-	text-align: center;
-	line-height: 60px;
-	color: black;
-	font-size: 26px;
-}
-
-.categories p {
-	color: #777777;
-	text-align: center;
-	font-size: 24px;
-}
-
 main .home {
 	justify-content: flex-start;
 	gap: 40px;
@@ -84,6 +38,7 @@ main .home {
 
 .content__top .item1 {
 	grid-area: 1 / 1 / 2 / 2;
+	background: url("../images/functional/pants-banner.jpg") center center /cover no-repeat;
 }
 
 .content__top .item2 {
@@ -149,6 +104,7 @@ main .home {
 	transform: rotate(-90deg) translate(-140px);
 	font-size: 24px;
 	font-weight: 600;
+	text-shadow: white 0 0 5px;
 }
 
 .item-title2 {
@@ -164,30 +120,6 @@ main .home {
 }
 
 @media all and (max-width: 1540px) {
-	.categories {
-		 height: calc(100vh - 120px);
-		 width: 100%;
-		 max-width: 300px;
-		 padding: 0;
-		 box-shadow: none;
-	}
-
-	.categories__content h2 {
-		 font-size: 32px;
-		 margin-bottom: 30px;
-		 margin-top: 0;
-	}
-
-	.categories__nav a {
-		 height: 35px;
-		 line-height: 35px;
-		 font-size: 20px;
-	}
-
-	.categories p {
-		 font-size: 20px;
-	}
-
 	.content {
 		 padding: 0 10px 0 80px;
 		 height: calc(100vh - 120px);
@@ -217,21 +149,6 @@ main .home {
 	.item-title3 {
 		 transform: rotate(-90deg) translate(-215px);
 	}
-}
-
-@media all and (max-width: 1024px) {
-	.categories {
-		 position: absolute;
-		 top: 0;
-		 left: -140%;
-		 transition: all 0.3s;
-		 padding: 30px;
-		 z-index: 99;
-		 height: 100vh;
-	}
-	.categories.active{
-		left: 0;
-  }
 }
 
 @media all and (max-width: 768px) {

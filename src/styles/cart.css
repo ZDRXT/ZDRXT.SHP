@@ -157,6 +157,10 @@
 	font-weight: 700;
 }
 
+.categories{
+	display: none;
+}
+
 @media all and (max-width: 1540px) {
 	.cart {
 		 padding: 0;
@@ -171,6 +175,12 @@
 	.cart .row button {
 		 font-size: 26px;
 		 padding: 10px 20px;
+	}
+}
+
+@media all and (max-width: 1024px) {
+	.categories{
+		display: flex;
 	}
 }
 

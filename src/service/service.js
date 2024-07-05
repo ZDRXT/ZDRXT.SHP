@@ -1,2 +1,9 @@
-const TOKEN_BOT = "7344019850:AAFrt7sWQIcqmJmtwKUl2X8iMEA_l094z7M"
-const CHAT_ID = "-1002178992391"
+import { PUBLIC_URL } from "./key.js";
+
+async function getPublicInfo(route, param = "") {
+	let res = await fetch(PUBLIC_URL + route + param)
+	let data = await res.json()
+	return data
+}
+
+export { getPublicInfo }

@@ -6,4 +6,18 @@ async function getPublicInfo(route, param = "") {
 	return data
 }
 
-export { getPublicInfo }
+function saveCategory(category) {
+	localStorage.setItem("zdrxt-category", category)
+}
+
+function getCategory() {
+	let category = localStorage.getItem("zdrxt-category")
+
+	if (category) {
+		return category
+	}
+
+	location.pathname = "/"
+}
+
+export { getPublicInfo, saveCategory, getCategory }

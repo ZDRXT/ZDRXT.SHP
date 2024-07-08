@@ -59,7 +59,7 @@
 	}
 
 	.product-card img {
-		 height: 220px;
+		 height: 260px;
 	}
 }
 
@@ -128,7 +128,7 @@
 	}
 
 	.product-card img {
-		 height: 160px;
+		 height: 200px;
 	}
 
 	.product-card h3 {
@@ -160,7 +160,7 @@
 
 @media all and (max-width: 320px) {
 	.product-card img{
-		 height: 120px;
+		 height: 160px;
 	}
 
 	.catalog select{

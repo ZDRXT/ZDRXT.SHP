@@ -146,6 +146,9 @@ main {
     padding: 0 20px;
     margin-top: 10px;
     margin-bottom: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .product-card p {

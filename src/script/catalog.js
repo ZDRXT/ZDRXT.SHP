@@ -1,10 +1,28 @@
 import { getPublicInfo, getCategory } from "../service/service.js"
+import { capitalizeFirstLetter } from "../service/utils.js"
+
+let catalogList = document.querySelector(".catalog__list")
 
 let category = getCategory()
 
+let catalogTitleText = document.querySelector(".catalog__title-text")
+
+let catalogFilter = document.querySelector(".catalog__filter")
+let currFilter = "newest-arrivals"
+
+let productsData
+
+catalogFilter.addEventListener("change", () => {
+	currFilter = catalogFilter.value
+	renderProducts(catalogList, productsData)
+})
+
+catalogTitleText.innerHTML = capitalizeFirstLetter(category)
+
 getPublicInfo("products", `?category=${category}`).then(data => {
-	let catalogList = document.querySelector(".catalog__list")
 	let filteredData = data.filter(el => el.category === category)
+
+	productsData = filteredData
 
 	renderProducts(catalogList, filteredData)
 })
@@ -12,7 +30,24 @@ getPublicInfo("products", `?category=${category}`).then(data => {
 function renderProducts(selector, prods) {
 	selector.innerHTML = ""
 
-	prods.forEach(prod => {
+	let filteredProds = []
+
+	switch (currFilter) {
+		case "newest-arrivals":
+			filteredProds = prods.slice().sort((a, b) => b.id - a.id)
+			console.log(filteredProds)
+			break;
+
+		case "price-low":
+			filteredProds = prods.slice().sort((a, b) => b.price - a.price)
+			break;
+			
+			case "price-high":
+				filteredProds = prods.slice().sort((a, b) => a.price - b.price)
+			break;
+	}
+
+	filteredProds.forEach(prod => {
 		selector.innerHTML += `<div class="product-card">
 				<img src="../images/products/${prod.photos[0]}">
 

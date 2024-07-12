@@ -12,12 +12,12 @@ function renderSlider(selector, prods) {
 	prods.forEach(prod => {
 		selector.innerHTML += `<div class="swiper-slide">
 			<div class="product-card">
-				<img src="${prod.photos[0]}">
+				<img src="./src/images/products/${prod.photos[0]}">
 
-				<h3>T-Shirt with watercolor print on back</h3>
+				<h3>${prod.title}</h3>
 
 				<div class="row">
-					<p>20$</p>
+					<p>${prod.price}$</p>
 
 					<button>Buy</button>
 				</div>

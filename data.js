@@ -33,8 +33,8 @@ let products = [
 			"xl"
 		],
 		photos: [
-			"./src/images/products/t-shirts/id2p1",
-			"./src/images/products/t-shirts/id2p2",
+			"t-shirts/id2p1",
+			"t-shirts/id2p2",
 		],
 	},
 	{
@@ -52,8 +52,8 @@ let products = [
 			"xl"
 		],
 		photos: [
-			"./src/images/products/t-shirts/id3p1",
-			"./src/images/products/t-shirts/id3p2",
+			"t-shirts/id3p1",
+			"t-shirts/id3p2",
 		],
 	},
 	{
@@ -71,8 +71,8 @@ let products = [
 			"xl"
 		],
 		photos: [
-			"./src/images/products/t-shirts/id4p1",
-			"./src/images/products/t-shirts/id4p2",
+			"t-shirts/id4p1",
+			"t-shirts/id4p2",
 		],
 	},
 	{
@@ -90,8 +90,8 @@ let products = [
 			"xl"
 		],
 		photos: [
-			"./src/images/products/t-shirts/id5p1",
-			"./src/images/products/t-shirts/id5p2",
+			"t-shirts/id5p1",
+			"t-shirts/id5p2",
 		],
 	},
 	{
@@ -109,8 +109,8 @@ let products = [
 			"xl"
 		],
 		photos: [
-			"./src/images/products/t-shirts/id6p1",
-			"./src/images/products/t-shirts/id6p2",
+			"t-shirts/id6p1",
+			"t-shirts/id6p2",
 		],
 	},
 	{
@@ -128,8 +128,8 @@ let products = [
 			"xl"
 		],
 		photos: [
-			"./src/images/products/t-shirts/id7p1",
-			"./src/images/products/t-shirts/id7p2",
+			"t-shirts/id7p1",
+			"t-shirts/id7p2",
 		],
 	},
 	{
@@ -147,8 +147,8 @@ let products = [
 			"xl"
 		],
 		photos: [
-			"./src/images/products/t-shirts/id8p1",
-			"./src/images/products/t-shirts/id8p2",
+			"t-shirts/id8p1",
+			"t-shirts/id8p2",
 		],
 	},
 	{
@@ -166,8 +166,8 @@ let products = [
 			"xl"
 		],
 		photos: [
-			"./src/images/products/t-shirts/id9p1",
-			"./src/images/products/t-shirts/id9p2",
+			"t-shirts/id9p1",
+			"t-shirts/id9p2",
 		],
 	},
 	{
@@ -185,8 +185,8 @@ let products = [
 			"xl"
 		],
 		photos: [
-			"./src/images/products/t-shirts/id10p1",
-			"./src/images/products/t-shirts/id10p2",
+			"t-shirts/id10p1",
+			"t-shirts/id10p2",
 		],
 	},
 	{
@@ -204,8 +204,8 @@ let products = [
 			"xl"
 		],
 		photos: [
-			"./src/images/products/shirts/id11p1",
-			"./src/images/products/shirts/id11p2",
+			"shirts/id11p1",
+			"shirts/id11p2",
 		],
 	},
 	{
@@ -223,8 +223,8 @@ let products = [
 			"xl"
 		],
 		photos: [
-			"./src/images/products/shirts/id12p1",
-			"./src/images/products/shirts/id12p2",
+			"shirts/id12p1",
+			"shirts/id12p2",
 		],
 	},
 	{
@@ -242,8 +242,8 @@ let products = [
 			"xl"
 		],
 		photos: [
-			"./src/images/products/shirts/id13p1",
-			"./src/images/products/shirts/id13p2",
+			"shirts/id13p1",
+			"shirts/id13p2",
 		],
 	},
 	{
@@ -261,8 +261,8 @@ let products = [
 			"xl"
 		],
 		photos: [
-			"./src/images/products/shirts/id14p1",
-			"./src/images/products/shirts/id14p2",
+			"shirts/id14p1",
+			"shirts/id14p2",
 		],
 	},
 	{
@@ -280,8 +280,8 @@ let products = [
 			"xl"
 		],
 		photos: [
-			"./src/images/products/shirts/id15p1",
-			"./src/images/products/shirts/id15p2",
+			"shirts/id15p1",
+			"shirts/id15p2",
 		],
 	},
 	{
@@ -299,8 +299,8 @@ let products = [
 			"xl"
 		],
 		photos: [
-			"./src/images/products/shirts/id16p1",
-			"./src/images/products/shirts/id16p2",
+			"shirts/id16p1",
+			"shirts/id16p2",
 		],
 	},
 	{
@@ -318,8 +318,8 @@ let products = [
 			"xl"
 		],
 		photos: [
-			"./src/images/products/shirts/id17p1",
-			"./src/images/products/shirts/id17p2",
+			"shirts/id17p1",
+			"shirts/id17p2",
 		],
 	},
 	{
@@ -337,8 +337,8 @@ let products = [
 			"xl"
 		],
 		photos: [
-			"./src/images/products/shirts/id18p1",
-			"./src/images/products/shirts/id18p2",
+			"shirts/id18p1",
+			"shirts/id18p2",
 		],
 	},
 	{
@@ -356,8 +356,8 @@ let products = [
 			"xl"
 		],
 		photos: [
-			"./src/images/products/shirts/id19p1",
-			"./src/images/products/shirts/id19p2",
+			"shirts/id19p1",
+			"shirts/id19p2",
 		],
 	},
 	{
@@ -375,8 +375,8 @@ let products = [
 			"xl"
 		],
 		photos: [
-			"./src/images/products/shirts/id20p1",
-			"./src/images/products/shirts/id20p2",
+			"shirts/id20p1",
+			"shirts/id20p2",
 		],
 	},
 	{
@@ -394,8 +394,8 @@ let products = [
 			"xl"
 		],
 		photos: [
-			"./src/images/products/pants/id21p1",
-			"./src/images/products/pants/id21p2",
+			"pants/id21p1",
+			"pants/id21p2",
 		],
 	},
 	{
@@ -413,8 +413,8 @@ let products = [
 			"xl"
 		],
 		photos: [
-			"./src/images/products/pants/id22p1",
-			"./src/images/products/pants/id22p2",
+			"pants/id22p1",
+			"pants/id22p2",
 		],
 	},
 	{
@@ -432,8 +432,8 @@ let products = [
 			"xl"
 		],
 		photos: [
-			"./src/images/products/pants/id23p1",
-			"./src/images/products/pants/id23p2",
+			"pants/id23p1",
+			"pants/id23p2",
 		],
 	},
 	{
@@ -451,8 +451,8 @@ let products = [
 			"xl"
 		],
 		photos: [
-			"./src/images/products/pants/id24p1",
-			"./src/images/products/pants/id24p2",
+			"pants/id24p1",
+			"pants/id24p2",
 		],
 	},
 	{
@@ -470,8 +470,8 @@ let products = [
 			"xl"
 		],
 		photos: [
-			"./src/images/products/pants/id25p1",
-			"./src/images/products/pants/id25p2",
+			"pants/id25p1",
+			"pants/id25p2",
 		],
 	},
 	{
@@ -489,8 +489,8 @@ let products = [
 			"xl"
 		],
 		photos: [
-			"./src/images/products/pants/id26p1",
-			"./src/images/products/pants/id26p2",
+			"pants/id26p1",
+			"pants/id26p2",
 		],
 	},
 	{
@@ -508,8 +508,8 @@ let products = [
 			"xl"
 		],
 		photos: [
-			"./src/images/products/pants/id27p1",
-			"./src/images/products/pants/id27p2",
+			"pants/id27p1",
+			"pants/id27p2",
 		],
 	},
 	{
@@ -527,8 +527,8 @@ let products = [
 			"xl"
 		],
 		photos: [
-			"./src/images/products/pants/id28p1",
-			"./src/images/products/pants/id28p2",
+			"pants/id28p1",
+			"pants/id28p2",
 		],
 	},
 	{
@@ -546,8 +546,8 @@ let products = [
 			"xl"
 		],
 		photos: [
-			"./src/images/products/pants/id29p1",
-			"./src/images/products/pants/id29p2",
+			"pants/id29p1",
+			"pants/id29p2",
 		],
 	},
 	{
@@ -565,8 +565,8 @@ let products = [
 			"xl"
 		],
 		photos: [
-			"./src/images/products/pants/id30p1",
-			"./src/images/products/pants/id30p2",
+			"pants/id30p1",
+			"pants/id30p2",
 		],
 	},
 	{
@@ -581,8 +581,8 @@ let products = [
 			"l",
 		],
 		photos: [
-			"./src/images/products/pants/id31p1",
-			"./src/images/products/pants/id31p2",
+			"accessories/id31p1",
+			"accessories/id31p2",
 		],
 	},
 	{
@@ -597,8 +597,8 @@ let products = [
 			"l",
 		],
 		photos: [
-			"./src/images/products/pants/id32p1",
-			"./src/images/products/pants/id32p2",
+			"accessories/id32p1",
+			"accessories/id32p2",
 		],
 	},
 	{
@@ -613,8 +613,8 @@ let products = [
 			"l",
 		],
 		photos: [
-			"./src/images/products/pants/id33p1",
-			"./src/images/products/pants/id33p2",
+			"accessories/id33p1",
+			"accessories/id33p2",
 		],
 	},
 	{
@@ -629,8 +629,8 @@ let products = [
 			"l",
 		],
 		photos: [
-			"./src/images/products/pants/id34p1",
-			"./src/images/products/pants/id34p2",
+			"accessories/id34p1",
+			"accessories/id34p2",
 		],
 	},
 	{
@@ -645,8 +645,8 @@ let products = [
 			"l",
 		],
 		photos: [
-			"./src/images/products/pants/id35p1",
-			"./src/images/products/pants/id35p2",
+			"accessories/id35p1",
+			"accessories/id35p2",
 		],
 	},
 	{
@@ -661,8 +661,8 @@ let products = [
 			"l",
 		],
 		photos: [
-			"./src/images/products/pants/id36p1",
-			"./src/images/products/pants/id36p2",
+			"accessories/id36p1",
+			"accessories/id36p2",
 		],
 	},
 	{
@@ -680,8 +680,8 @@ let products = [
 			"xl"
 		],
 		photos: [
-			"./src/images/products/pants/id37p1",
-			"./src/images/products/pants/id37p2",
+			"accessories/id37p1",
+			"accessories/id37p2",
 		],
 	},
 	{
@@ -699,8 +699,8 @@ let products = [
 			"xl"
 		],
 		photos: [
-			"./src/images/products/pants/id38p1",
-			"./src/images/products/pants/id38p2",
+			"accessories/id38p1",
+			"accessories/id38p2",
 		],
 	},
 	{
@@ -715,8 +715,8 @@ let products = [
 			"l",
 		],
 		photos: [
-			"./src/images/products/pants/id39p1",
-			"./src/images/products/pants/id39p2",
+			"accessories/id39p1",
+			"accessories/id39p2",
 		],
 	},
 	{
@@ -731,8 +731,8 @@ let products = [
 			"l",
 		],
 		photos: [
-			"./src/images/products/pants/id40p1",
-			"./src/images/products/pants/id40p2",
+			"accessories/id40p1",
+			"accessories/id40p2",
 		],
 	},
 ]

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ZDRXT.SHP</title>
+	<link rel="stylesheet" href="../../style.css">
+	<link rel="stylesheet" href="../styles/product.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+	<div class="container">
+		<header>
+			<div class="row">
+				<div class="header__logo">
+					<span>ZDRXT.SHP</span>
+					<img src="../images/functional/shop-logo.svg" alt="logo">
+				</div>
+
+				<div class="header__location">
+					CATALOG
+				</div>
+
+				<nav class="header__navigation row">
+					<a href="../../index.html" class="header__navigation-nav"><img src="../images/functional/Home.png"></a>
+
+					<a href="./cart.html" class="header__navigation-nav"><img src="../images/functional/Cart.png"></a>
+
+					<button class="header__navigation-nav"><img src="../images/functional/Theme-white.png"></button>
+
+					<div class="header__burger">
+						<figure></figure>
+						<figure></figure>
+						<figure></figure>
+					</div>
+				</nav>
+			</div>
+		</header>
+
+		<main>
+			<section class="product">
+				<div class="product__gallery">
+					<div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+						class="swiper product__gallery-main">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+							</div>
+							<div class="swiper-slide">
+								<img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+							</div>
+							<div class="swiper-slide">
+								<img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+							</div>
+						</div>
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+					</div>
+					<div thumbsSlider="" class="swiper product__gallery-track">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+							</div>
+							<div class="swiper-slide">
+								<img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+							</div>
+							<div class="swiper-slide">
+								<img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="product__info">
+					<h2 class="product__info-title">T-Shirt with watercolor print on back</h2>
+					<p class="product__info-descr">Loose fit t-shirt with a round collar and short sleeves. Lettering with a
+						watercolor effect on the back.</p>
+					<table>
+						<tr>
+							<td>M</td>
+							<td>L</td>
+							<td>XL</td>
+							<td>XXL</td>
+						</tr>
+					</table>
+
+					<div class="row">
+						<div class="product__info-price">5464$</div>
+						<button class="product__info-buy">Buy</button>
+					</div>
+				</div>
+			</section>
+
+			<section class="reviews">
+
+			</section>
+
+			<section class="promo">
+
+			</section>
+		</main>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script>
+		var swiper = new Swiper(".product__gallery-track", {
+			slidesPerView: 3,
+			freeMode: true,
+			watchSlidesProgress: true,
+		});
+		var swiper2 = new Swiper(".product__gallery-main", {
+			loop: true,
+			spaceBetween: 10,
+			navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev",
+			},
+			thumbs: {
+				swiper: swiper,
+			},
+		});
+	</script>
+
+	<script src="../script/productPage.js" type="module"></script>
+</body>
+
+</html>

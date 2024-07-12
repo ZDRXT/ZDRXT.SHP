@@ -10,6 +10,18 @@ function saveCategory(category) {
 	localStorage.setItem("zdrxt-category", category)
 }
 
+function saveProduct(key, data) {
+	localStorage.setItem(key, JSON.stringify(data))
+}
+
+function getProduct(key) {
+	let prod = JSON.parse(localStorage.getItem(key))
+
+	if (prod) return prod
+
+	return null
+}
+
 function getCategory() {
 	let category = localStorage.getItem("zdrxt-category")
 
@@ -20,4 +32,4 @@ function getCategory() {
 	location.pathname = "/"
 }
 
-export { getPublicInfo, saveCategory, getCategory }
+export { getPublicInfo, saveCategory, getCategory, saveProduct, getProduct }

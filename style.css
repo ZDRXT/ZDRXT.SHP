@@ -282,6 +282,8 @@ main {
     }
 
     .product-card {
+		  display: block;	
+		  text-decoration: none;
         width: 208px;
         padding-bottom: 10px;
     }

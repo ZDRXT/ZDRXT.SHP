@@ -41,14 +41,14 @@ function renderProducts(selector, prods) {
 		case "price-low":
 			filteredProds = prods.slice().sort((a, b) => b.price - a.price)
 			break;
-			
-			case "price-high":
-				filteredProds = prods.slice().sort((a, b) => a.price - b.price)
+
+		case "price-high":
+			filteredProds = prods.slice().sort((a, b) => a.price - b.price)
 			break;
 	}
 
 	filteredProds.forEach(prod => {
-		selector.innerHTML += `<div class="product-card">
+		selector.innerHTML += `<a href="./product.html" class="product-card">
 				<img src="../images/products/${prod.photos[0]}">
 
 				<h3>${prod.title}</h3>
@@ -58,6 +58,6 @@ function renderProducts(selector, prods) {
 
 					<button>Buy</button>
 				</div>
-			</div>`
+			</a>`
 	})
 }

@@ -35,7 +35,6 @@ function renderProducts(selector, prods) {
 	switch (currFilter) {
 		case "newest-arrivals":
 			filteredProds = prods.slice().sort((a, b) => b.id - a.id)
-			console.log(filteredProds)
 			break;
 
 		case "price-low":

@@ -1,3 +1,8 @@
+.product{
+	display: flex;
+	gap: 15px;
+}
+
 .product__gallery{
 	display: flex;
 }
@@ -41,4 +46,84 @@
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+}
+
+main{
+	padding: 40px 80px 20px 80px;
+	background-color: #333333;
+	border-radius: 1vh;
+	color: white;
+	width: 100%;
+	height: calc(100vh - 240px);
+	box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.3), 10px 10px rgba(0, 0, 0, 0.25), 15px 15px rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+	overflow-y: auto;
+}
+
+.product__info-title{
+	font-size: 48px;
+	margin-bottom: 30px;
+}
+
+.product__info-descr{
+	font-size: 26px;
+	margin-bottom: 30px;
+}
+
+.product__info table{
+	margin-bottom: 30px;
+}
+
+tr{
+	height: 50px;
+	display: flex;
+	gap: 5px;
+}
+
+td{
+	display: block;
+	height: 100%;
+	width: 100px;
+	border: 2px solid white;
+	font-size: 30px;
+	text-align: center;
+	line-height: 46px;
+}
+
+.product__info .row{
+	width: 415px;
+}
+
+.product__info-price{
+	font-size: 48px;
+	font-weight: 600;
+}
+
+.product__info-buy{
+	border: 2px solid #777777;
+	background-color: #c9c9c9;
+	color: black;
+	height: 60px;
+	width: 245px;
+	border-radius: 15px;
+	font-size: 40px;
+	font-weight: 600;
+}
+
+main .reviews{
+	margin-top: 30px;
+	color: white;
+	font-size: 40px;
+	font-weight: 600;
+	display: flex;
+}
+
+main .reviews img{
+	height: 40px;
+	width: 40px;
+	margin-top: 3px;
+}
+
+main .reviews span{
+	color: #777777;
 }

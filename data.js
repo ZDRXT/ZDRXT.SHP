@@ -748,7 +748,7 @@ let products = [
 let comments = [
 	{
 		id: "1",
-		pduct_id: "",
+		productId: "",	
 		date: "",
 		author: "",
 		text: "",

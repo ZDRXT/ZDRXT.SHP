@@ -6,6 +6,16 @@ async function getPublicInfo(route, param = "") {
 	return data
 }
 
+async function postPublicInfo(route, body) {
+	let res = await fetch(PUBLIC_URL + route, {
+		method: 'POST',
+		headers: { 'content-type': 'application/json' },
+		body: JSON.stringify(body)
+	})
+	let data = await res.json()
+	return data
+}
+
 function saveCategory(category) {
 	localStorage.setItem("zdrxt-category", category)
 }
@@ -32,4 +42,4 @@ function getCategory() {
 	location.pathname = "/"
 }
 
-export { getPublicInfo, saveCategory, getCategory, saveProduct, getProduct }
+export { getPublicInfo, saveCategory, getCategory, saveProduct, getProduct, postPublicInfo }

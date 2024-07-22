@@ -3,7 +3,6 @@ import { saveProduct } from "../service/service.js";
 function initialProdHandler() {
 	let allProds = document.querySelectorAll(".product-card")
 
-
 	allProds.forEach(prod => {
 		prod.addEventListener("click", (event) => {
 			if (event.target.closest(".product-card")) {

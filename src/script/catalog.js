@@ -1,5 +1,6 @@
 import { getPublicInfo, getCategory } from "../service/service.js"
 import { capitalizeFirstLetter } from "../service/utils.js"
+import initialProdHandler from "./productHandler.js"
 
 let catalogList = document.querySelector(".catalog__list")
 
@@ -25,6 +26,8 @@ getPublicInfo("products", `?category=${category}`).then(data => {
 	productsData = filteredData
 
 	renderProducts(catalogList, filteredData)
+
+	initialProdHandler()
 })
 
 function renderProducts(selector, prods) {
@@ -47,7 +50,7 @@ function renderProducts(selector, prods) {
 	}
 
 	filteredProds.forEach(prod => {
-		selector.innerHTML += `<a href="./product.html" class="product-card">
+		selector.innerHTML += `<a href="./product.html" class="product-card" data-id="${prod.id}">
 				<img src="../images/products/${prod.photos[0]}">
 
 				<h3>${prod.title}</h3>

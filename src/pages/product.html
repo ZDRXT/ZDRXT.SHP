@@ -25,8 +25,7 @@
 				</div>
 
 				<nav class="header__navigation row">
-					<a href="../../index.html" class="header__navigation-nav"><img
-							src="../images/functional/Home.png"></a>
+					<a href="../../index.html" class="header__navigation-nav"><img src="../images/functional/Home.png"></a>
 
 					<a href="./cart.html" class="header__navigation-nav"><img src="../images/functional/Cart.png"></a>
 
@@ -47,15 +46,7 @@
 					<div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
 						class="swiper product__gallery-main">
 						<div class="swiper-wrapper">
-							<div class="swiper-slide">
-								<img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-							</div>
-							<div class="swiper-slide">
-								<img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-							</div>
-							<div class="swiper-slide">
-								<img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-							</div>
+
 						</div>
 						<div class="swiper-button-next"></div>
 						<div class="swiper-button-prev"></div>
@@ -63,15 +54,7 @@
 
 					<div thumbsSlider="" class="swiper product__gallery-track">
 						<div class="swiper-wrapper">
-							<div class="swiper-slide">
-								<img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-							</div>
-							<div class="swiper-slide">
-								<img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-							</div>
-							<div class="swiper-slide">
-								<img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-							</div>
+
 						</div>
 					</div>
 				</div>
@@ -90,7 +73,10 @@
 			</section>
 
 			<section class="reviews">
-				<p>Rewievs<img src="../images/functional/arrow-next.png"><span class="reviews-amount">0</span></p>
+				<div class="reviews__controll row">
+					<p>Rewievs<img src="../images/functional/arrow-next.png"><span class="reviews-amount">0</span></p>
+					<button>Add comment</button>
+				</div>
 
 				<div class="reviews__container">
 					<div class="reviews__container-item">
@@ -154,14 +140,33 @@
 				<div class="content__slider">
 					<div class="swiper content__slider-swiper">
 						<div class="swiper-wrapper">
-	
+
 						</div>
-	
+
 						<div class="swiper-pagination"></div>
 					</div>
 				</div>
 			</section>
 		</main>
+
+		<div class="modal">
+			<div class="modal__window">
+				<form class="feedback">
+					<h3>Leave comment</h3>
+					<input type="text" placeholder="Your name" class="feedback__name"> <br>
+					<input type="text" placeholder="Title" class="feedback__title"> <br>
+					<textarea type="text" placeholder="comment" class="feedback__body"></textarea>
+
+					<h3>Do you recommend this product</h3>
+					<input type="radio" name="rec" id="rec" checked>
+					<label for="rec">Yes</label>
+					<input type="radio" name="rec" id="unrec">
+					<label for="unrec">No</label> <br>
+
+					<button>Send</button>
+				</form>
+			</div>
+		</div>
 	</div>
 
 	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

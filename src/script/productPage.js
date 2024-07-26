@@ -122,3 +122,33 @@ function renderComments(comments) {
 					</div>`
 	})
 }
+
+let modalWindow = document.querySelector(".modal")
+
+modalWindow.addEventListener("", () => {
+    const modalWind = document.querySelector(".modal");
+    const closeButton = document.querySelector(".close-btn");
+    const sendButton = document.querySelector(".send-btn");
+	const addComment = document.querySelector(".add-comment-btn")
+
+	closeButton.addEventListener("click", function(event) {
+        event.preventDefault();
+        modalWind.classList.remove('active');
+    });
+
+	sendButton.addEventListener("click", function(event) {
+        event.preventDefault();
+        modalWind.classList.remove('active');
+    });
+
+	modalWindow.addEventListener("click", function(event) {
+        if (event.target === modalWindow) {
+            modalWind.classList.remove('active');
+        }
+    });
+
+	addComment.addEventListener("click", function(event) {
+		modalWind.classList.add('active');
+		console.log("hello")
+	})
+});

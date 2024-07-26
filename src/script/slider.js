@@ -22,7 +22,7 @@ function initialSlider(param = "?popular=true") {
 						<div class="row">
 							<p>${prod.price}$</p>
 		
-							<button>Buy</button>
+							<button>Show</button>
 						</div>
 					</a>
 			   </div>`

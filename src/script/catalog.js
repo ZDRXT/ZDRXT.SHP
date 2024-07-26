@@ -58,7 +58,7 @@ function renderProducts(selector, prods) {
 				<div class="row">
 					<p>${prod.price}$</p>
 
-					<button>Buy</button>
+					<button>Show</button>
 				</div>
 			</a>`
 	})

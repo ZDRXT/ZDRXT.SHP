@@ -24,12 +24,38 @@ let reviewsAmount = document.querySelector(".reviews-amount")
 let getCartList = getProduct("cart-list")
 let cartList = getCartList ? getCartList : []
 
-productInfo.addEventListener("click", (event) => {
 
+productInfo.addEventListener("click", (event) => {
 	if (event.target.closest(".product__info-buy")) {
 		getPublicInfo("products/", cardId).then(data => {
 			if (data.title && data.price) {
-				cartList.push({ ...data, count: 1 })
+				let sizesInp = document.querySelectorAll(".product__info-sizes input")
+				
+				let currSize = ""
+
+				sizesInp.forEach(inp => {
+					if (inp.checked) {
+						currSize = inp.dataset.size
+					}
+				})
+
+				let prodIndex = cartList.findIndex(element => element.id == data.id && element.sizes == currSize)
+
+				if (prodIndex >= 0) {
+					cartList[prodIndex].count = cartList[prodIndex].count + 1
+				} else {
+					cartList.push({ ...data, count: 1, sizes: currSize})
+				}
+
+				event.target.innerHTML = "In cart"
+
+				event.target.disabled = true
+
+				setTimeout(() => {
+					event.target.innerHTML = "Add to cart"
+					event.target.disabled = false
+				}, 1500)
+
 				saveProduct("cart-list", cartList)
 			}
 		})
@@ -87,7 +113,7 @@ function renderProduct(product) {
 		</div>
 	`})
 
-	let sizeHTML = product.sizes.map(size => `<input type="radio" name="size" id="${size}-id"><label for="${size}-id">${size}</label>`).join("")
+	let sizeHTML = product.sizes.map(size => `<input data-size="${size}" type="radio" name="size" id="${size}-id"><label for="${size}-id">${size}</label>`).join("")
 
 	productInfo.innerHTML = `<h2 class="product__info-title">${product.title}</h2>
 				<p class="product__info-descr">${product.about}</p>
@@ -164,4 +190,8 @@ modal.addEventListener("click", (event) => {
 
 addComment.addEventListener("click", () => {
 	modal.classList.add('active');
+})
+
+closeButton.addEventListener(() => {
+	modal.classList.remove('.active')
 })

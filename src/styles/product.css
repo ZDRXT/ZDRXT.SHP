@@ -83,15 +83,14 @@ main {
 	flex-wrap: wrap;
 }
 
-.product__info-sizes label {
-	display: block;
-	border: 2px solid white;
-	width: 80px;
-	height: 40px;
-	line-height: 40px;
-	text-align: center;
-	text-transform: uppercase;
-	cursor: pointer;
+.product-card {
+    display: block;
+    text-decoration: none;
+    width: 330px;
+    height: auto;
+    background-color: #D9D9D9;
+    border-radius: 1vh;
+    padding-bottom: 20px;
 }
 
 .product__info-sizes input[type="radio"]:checked + label {

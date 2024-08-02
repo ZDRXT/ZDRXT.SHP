@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../../style.css">
+	<link rel="stylesheet" href="../styles/checkout.css">
+	<title>ZDRXT.SHP</title>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jacquard+12+Charted&display=swap"
+		rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div class="container">
+		<header>
+			<div class="row">
+				<div class="header__logo">
+					<span>ZDRXT.SHP</span>
+					<img src="../images/functional/shop-logo.svg" alt="logo">
+				</div>
+
+				<div class="header__location">
+					CATALOG
+				</div>
+
+				<nav class="header__navigation row">
+					<a href="../../index.html" class="header__navigation-nav"><img
+							src="../images/functional/Home.png"></a>
+
+					<a href="./cart.html" class="header__navigation-nav"><img src="../images/functional/Cart.png"></a>
+
+					<button class="header__navigation-nav"><img src="../images/functional/Theme-white.png"></button>
+
+					<div class="header__burger">
+						<figure></figure>
+						<figure></figure>
+						<figure></figure>
+					</div>
+				</nav>
+			</div>
+		</header>
+
+		<main>
+			<h1>Placing an order</h1>
+
+			<div class="container">
+				<section class="all-prod-info">
+					<div class="products">
+						<div class="product">
+							<img src="../images/products/t-shirts/id1p1.jpeg">
+
+							<div class="about">
+								<h3>Loose fit t-shirt with a round collar and short sleeves. Contrast print on front and back.</h3>
+
+								<div class="about-bottom">
+									<div class="price">$12.3</div>
+								</div>
+							</div>
+
+							<button class="remove__item-btn">&#10006;</button>
+						</div>
+
+						<div class="product">
+							<img src="../images/products/t-shirts/id1p1.jpeg">
+
+							<div class="about">
+								<h3>Loose fit t-shirt with a round collar and short sleeves. Contrast print on front and back.</h3>
+
+								<div class="about-bottom">
+									<div class="price">$12.3</div>
+								</div>
+							</div>
+
+							<button class="remove__item-btn">&#10006;</button>
+						</div>
+
+						<div class="product">
+							<img src="../images/products/t-shirts/id1p1.jpeg">
+
+							<div class="about">
+								<h3>Loose fit t-shirt with a round collar and short sleeves. Contrast print on front and back.</h3>
+
+								<div class="about-bottom">
+									<div class="price">$12.3</div>
+								</div>
+							</div>
+
+							<button class="remove__item-btn">&#10006;</button>
+						</div>
+
+						<div class="product">
+							<img src="../images/products/t-shirts/id1p1.jpeg">
+
+							<div class="about">
+								<h3>Loose fit t-shirt with a round collar and short sleeves. Contrast print on front and back.</h3>
+
+								<div class="about-bottom">
+									<div class="price">$12.3</div>
+								</div>
+							</div>
+
+							<button class="remove__item-btn">&#10006;</button>
+						</div>
+
+						<div class="product">
+							<img src="../images/products/t-shirts/id1p1.jpeg">
+
+							<div class="about">
+								<h3>Loose fit t-shirt with a round collar and short sleeves. Contrast print on front and back.</h3>
+
+								<div class="about-bottom">
+									<div class="price">$12.3</div>
+								</div>
+							</div>
+
+							<button class="remove__item-btn">&#10006;</button>
+						</div>
+					</div>
+
+					<div class="total-price">
+						<h3>Total price</h3>
+						<p>$<span>123</span></p>
+					</div>
+				</section>
+
+				<section class="form">
+					<form>
+						<h3>Your contact data</h3>
+
+						<input placeholder="Your name" type="text" class="name-inp">
+						<input placeholder="Your phone number" type="text" class="phone-inp">
+
+						<h3>Delivery</h3>
+
+						<select name="region" id="">
+							<option value=""></option>
+							<option value=""></option>
+							<option value=""></option>
+							<option value=""></option>
+							<option value=""></option>
+							<option value=""></option>
+						</select>
+
+						<select name="by" id="">
+							<option value="">New Post</option>
+							<option value="">Ukr Post</option>
+						</select>
+
+						<input placeholder="Street" type="text" class="street">
+
+						<textarea placeholder="Leave a comment" name="" id="" cols="30" rows="10"
+							maxlength="250"></textarea>
+					</form>
+
+					<button class="confirm-order-btn">Confirm order</button>
+				</section>
+			</div>
+		</main>
+	</div>
+
+	<script src="../../script.js" type="module"></script>
+	<script src="../script/catalog.js" type="module"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+	<script>
+		var swiper = new Swiper(".content__slider-swiper", {
+			slidesPerView: "auto",
+			spaceBetween: 20,
+			freeMode: true,
+			pagination: {
+				el: ".swiper-pagination",
+				clickable: true,
+			},
+		});
+	</script>
+</body>
+
+
+</html>

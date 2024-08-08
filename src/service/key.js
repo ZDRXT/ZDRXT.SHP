@@ -3,4 +3,3 @@ const CHAT_ID = "-1002178992391";
 const PUBLIC_URL = "https://6666fa49a2f8516ff7a5be49.mockapi.io/";
 
 export { TOKEN_BOT, CHAT_ID, PUBLIC_URL }
-

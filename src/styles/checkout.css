@@ -86,7 +86,7 @@ form textarea{
 .products{
     display: flex;
     flex-direction: column;
-    height: calc(100% - 50px);
+    height: calc(886px - 60px);
     gap: 20px;
     overflow: hidden;
 	overflow-y: auto;
@@ -122,19 +122,26 @@ form textarea{
 }
 
 .product .price {
-	font-size: 32px;
-	font-weight: 600;
-}
-
-.product .price {
-	font-size: 32px;
+    font-size: 32px;
 	font-weight: 600;
     text-align: right;
     padding: 0 50px;
 }
 
+.product .about-bottom{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding-left: 30px;
+}
+
+.product .count{
+    font-size: 32px;
+    font-weight: 600;
+}
+
 .product .remove__item-btn {
-	cursor: pointer;
+    cursor: pointer;
 	position: absolute;
 	background-color: #c9c9c9;
 	color: #CA2929;
@@ -148,6 +155,60 @@ form textarea{
 	text-align: center;
 	top: 0;
 	right: 10px;
+}
+
+.order-sent-modal{
+    display: none;
+    position: absolute;
+    top: -40px;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: #000000a0;
+    justify-content: center;
+    align-items: center;
+}
+
+.order-sent{
+    margin-right: auto;
+    margin-left: auto ;
+    margin-top: calc(50vh - 150px);
+    background-color: #c9c9c9;
+    border: 2px solid #262626;
+    border-radius: 15px;
+    height: 300px;
+    width: 600px;
+    max-height: 300px;
+    max-width: 600px;
+    color: black;
+    padding: 10px;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.order-sent p:nth-child(1){
+    text-align: center;
+    margin: 10px auto;
+}
+
+.order-sent p:nth-child(2){
+    text-align: center;
+    margin: 40px auto;
+    max-width: 75%;
+}
+
+.order-sent a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    border: 2px solid #262626;
+    border-radius: 1vh;
+    text-align: center;
+}
+
+.active{
+    display: block;
 }
 
 @media all and (max-width: 1540px) {
@@ -197,15 +258,60 @@ form textarea{
         height: 45px;
         font-size: 26px;
     }
+    
+    .order-sent{
+        margin-top: calc(50vh - 120px);
+        height: 240px;
+        width: 480px;
+        max-height: 240px;
+        max-width: 480px;
+        font-size: 24px;
+    }
+
+    .order-sent p:nth-child(1){
+        margin: 7px auto;
+    }
+    
+    .order-sent p:nth-child(2){
+        margin: 25px auto;
+    }
+    
+    .order-sent a{
+        padding: 8px 10px;
+    }
+}
+
+@media all and (max-width: 1224px) {
+    .product .about-bottom{
+        flex-direction: column;
+    }
+
+    .product .about-bottom .count, .product .about-bottom .price{
+        font-size: 28px;
+        padding-right: 40px;
+        padding-left: 0;
+    }
 }
 
 @media all and (max-width: 1024px) {
+    .product h3{
+        margin-bottom: 10px;
+    }
+
+    .product .about-bottom .count, .product .about-bottom .price{
+        font-size: 26px;
+    }
+
     header{
         padding-bottom: 0;
     }
 }
 
 @media all and (max-width: 768px) {
+    main{
+        height: calc(100vh - 80px);
+    }
+
     main .container{
         display: flex;
         flex-direction: column;
@@ -226,6 +332,10 @@ form textarea{
 }
 
 @media all and (max-width: 580px) {
+    .product .about-bottom .count, .product .about-bottom .price{
+        font-size: 24px;
+    }
+
     main h1{
         font-size: 24px;
     }
@@ -241,10 +351,6 @@ form textarea{
 
     .product h3{
         font-size: 22px;
-    }
-
-    .product .price{
-        font-size: 28px;
     }
 
     .product .remove__item-btn{
@@ -284,9 +390,27 @@ form textarea{
     .confirm-order-btn {
         margin-top: 15px;
     }
+
+    .order-sent{
+        margin-top: calc(50vh - 120px);
+        height: 300px;
+        width: 350px;
+        max-height: 300px;
+        max-width: 350px;
+        font-size: 24px;
+    }
+    
+    .order-sent p:nth-child(2){
+        margin: 27px auto;
+    }
 }
 
 @media all and (max-width: 380px) {
+    .product .about-bottom .count, .product .about-bottom .price{
+        font-size: 20px;
+        padding-right: 0;
+    }
+
     .products{
         gap: 8px;
     }
@@ -302,5 +426,18 @@ form textarea{
 
     .product .price{
         padding: 0 10px;
+    }
+
+    .order-sent{
+        margin-top: calc(50vh - 120px);
+        height: 260px;
+        width: 300px;
+        max-height: 300px;
+        max-width: 300px;
+        font-size: 20px;
+    }
+    
+    .order-sent p:nth-child(2){
+        margin: 24px auto;
     }
 }

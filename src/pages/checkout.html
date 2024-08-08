@@ -56,75 +56,7 @@
 			<div class="container">
 				<section class="all-prod-info">
 					<div class="products">
-						<div class="product">
-							<img src="../images/products/t-shirts/id1p1.jpeg">
 
-							<div class="about">
-								<h3>Loose fit t-shirt with a round collar and short sleeves. Contrast print on front and back.</h3>
-
-								<div class="about-bottom">
-									<div class="price">$12.3</div>
-								</div>
-							</div>
-
-							<button class="remove__item-btn">&#10006;</button>
-						</div>
-
-						<div class="product">
-							<img src="../images/products/t-shirts/id1p1.jpeg">
-
-							<div class="about">
-								<h3>Loose fit t-shirt with a round collar and short sleeves. Contrast print on front and back.</h3>
-
-								<div class="about-bottom">
-									<div class="price">$12.3</div>
-								</div>
-							</div>
-
-							<button class="remove__item-btn">&#10006;</button>
-						</div>
-
-						<div class="product">
-							<img src="../images/products/t-shirts/id1p1.jpeg">
-
-							<div class="about">
-								<h3>Loose fit t-shirt with a round collar and short sleeves. Contrast print on front and back.</h3>
-
-								<div class="about-bottom">
-									<div class="price">$12.3</div>
-								</div>
-							</div>
-
-							<button class="remove__item-btn">&#10006;</button>
-						</div>
-
-						<div class="product">
-							<img src="../images/products/t-shirts/id1p1.jpeg">
-
-							<div class="about">
-								<h3>Loose fit t-shirt with a round collar and short sleeves. Contrast print on front and back.</h3>
-
-								<div class="about-bottom">
-									<div class="price">$12.3</div>
-								</div>
-							</div>
-
-							<button class="remove__item-btn">&#10006;</button>
-						</div>
-
-						<div class="product">
-							<img src="../images/products/t-shirts/id1p1.jpeg">
-
-							<div class="about">
-								<h3>Loose fit t-shirt with a round collar and short sleeves. Contrast print on front and back.</h3>
-
-								<div class="about-bottom">
-									<div class="price">$12.3</div>
-								</div>
-							</div>
-
-							<button class="remove__item-btn">&#10006;</button>
-						</div>
 					</div>
 
 					<div class="total-price">
@@ -137,39 +69,61 @@
 					<form>
 						<h3>Your contact data</h3>
 
-						<input placeholder="Your name" type="text" class="name-inp">
-						<input placeholder="Your phone number" type="text" class="phone-inp">
+						<input required placeholder="Your name" type="text" class="name-inp">
+						<input required placeholder="Your phone number" type="text" class="phone-inp">
 
 						<h3>Delivery</h3>
 
-						<select name="region" id="">
-							<option value=""></option>
-							<option value=""></option>
-							<option value=""></option>
-							<option value=""></option>
-							<option value=""></option>
-							<option value=""></option>
+						<select name="region" id="" class="city-select">
+							<option value="Kyiv">Kyiv</option>
+							<option value="Lviv">Lviv</option>
+							<option value="Odessa">Odessa</option>
+							<option value="Kharkiv">Kharkiv</option>
+							<option value="Vinnutsya">Vinnutsya</option>
+							<option value="Volun">Volun</option>
+							<option value="Dnipro">Dnipro</option>
+							<option value="Zytomur">Zytomur</option>
+							<option value="Zakarpatya">Zakarpatya</option>
+							<option value="Ivano-Franfivsk">Ivano-Franfivsk</option>
+							<option value="Kirivigtad">Kirivigtad</option>
+							<option value="Mykolaiv">Mykolaiv</option>
+							<option value="Poltava">Poltava</option>
+							<option value="Rivna">Rivna</option>
+							<option value="Symu">Symu</option>
+							<option value="Ternopil">Ternopil</option>
+							<option value="Cherkasu">Cherkasu</option>
+							<option value="Chernigiv">Chernigiv</option>
 						</select>
 
-						<select name="by" id="">
-							<option value="">New Post</option>
-							<option value="">Ukr Post</option>
+						<select name="by" id="" class="post-select">
+							<option value="New Post">New Post</option>
+							<option value="Ukr Post">Ukr Post</option>
 						</select>
 
-						<input placeholder="Street" type="text" class="street">
+						<input required placeholder="Street" type="text" class="street-inp">
 
 						<textarea placeholder="Leave a comment" name="" id="" cols="30" rows="10"
-							maxlength="250"></textarea>
-					</form>
+							maxlength="250" class="comment-inp"></textarea>
 
-					<button class="confirm-order-btn">Confirm order</button>
+						<button class="confirm-order-btn">Confirm order</button>
+					</form>
 				</section>
+			</div>
+
+			<div class="order-sent-modal">
+				<div class="order-sent">
+					<p>Your order was sent!</p>
+	
+					<p>Wait for a message from the moderation of the website in Telegram within 24 hours</p>
+	
+					<a href="/">Ok</a>
+				</div>
 			</div>
 		</main>
 	</div>
 
 	<script src="../../script.js" type="module"></script>
-	<script src="../script/catalog.js" type="module"></script>
+	<script src="../script/chekout.js" type="module"></script>
 
 	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 

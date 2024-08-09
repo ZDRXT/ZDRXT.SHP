@@ -215,6 +215,7 @@ form textarea{
     main{
         box-shadow: none;
         padding: 0;
+        height: calc(100vh - 120px);
     }
 
     header{

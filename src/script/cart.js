@@ -33,7 +33,6 @@ cartListBox.addEventListener("click", (event) => {
     }
 })
 
-
 function renderCart() {
     let totalPrice = 0
 

@@ -1,4 +1,4 @@
-import { getProduct, saveProduct } from "../service/service.js"
+import { getProduct, postAdminInfo } from "../service/service.js"
 import sendData from "../service/sendOrder.js"
 
 let getCartList = getProduct("cart-list")
@@ -17,6 +17,10 @@ let street = document.querySelector(".street-inp")
 let comment = document.querySelector(".comment-inp")
 
 let totalPrice = 0
+
+if (prodList.length == 0) {
+    location.pathname = "/src/pages/cart.html"
+}
 
 function renderProdList() {
 
@@ -54,6 +58,20 @@ form.addEventListener("submit", (event) => {
 
     let orderSentModal = document.querySelector(".order-sent-modal")
 
+    let adminData = {
+        sum: totalPrice,
+        date: Date.now(),
+        client: {
+            name: name.value,
+            number: phone.value,
+            address: city.value + " - " + street.value,
+            delivery: post.value,
+            comment: comment.value
+        },
+        products: prodList,
+        status: "Очікує",
+    }
+
     prodList.forEach(prod => {
         orders += `${prod.title} [${prod.id}]\nРозмір: ${prod.sizes}\nКількість: ${prod.count}\nЦіна: ${prod.price*prod.count}\n--------------------------------\n`
     })
@@ -62,13 +80,16 @@ form.addEventListener("submit", (event) => {
 
     sendData(message).then(() => {
         orderSentModal.classList.add("active")
-        name = ""
-        phone = ""
-        city= ""
-        post = ""
-        street = ""
-        comment = ""
+        name.value = ""
+        phone.value = ""
+        city.value = ""
+        post.value = ""
+        street.value = ""
+        comment.value = ""
+        localStorage.removeItem("cart-list")
     })
+
+    postAdminInfo("orders", adminData).then( () => {console.log("ok")})
 })
 
 renderProdList()

@@ -1,4 +1,4 @@
-import { PUBLIC_URL } from "./key.js";
+import { PUBLIC_URL, ADMIN_URL } from "./key.js";
 
 async function getPublicInfo(route, param = "") {
 	let res = await fetch(PUBLIC_URL + route + param)
@@ -8,6 +8,16 @@ async function getPublicInfo(route, param = "") {
 
 async function postPublicInfo(route, body) {
 	let res = await fetch(PUBLIC_URL + route, {
+		method: 'POST',
+		headers: { 'content-type': 'application/json' },
+		body: JSON.stringify(body)
+	})
+	let data = await res.json()
+	return data
+}
+
+async function postAdminInfo(route, body) {
+	let res = await fetch(ADMIN_URL + route, {
 		method: 'POST',
 		headers: { 'content-type': 'application/json' },
 		body: JSON.stringify(body)
@@ -42,4 +52,4 @@ function getCategory() {
 	location.pathname = "/"
 }
 
-export { getPublicInfo, saveCategory, getCategory, saveProduct, getProduct, postPublicInfo }
+export { getPublicInfo, saveCategory, getCategory, saveProduct, getProduct, postPublicInfo, postAdminInfo }
